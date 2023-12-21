@@ -23,7 +23,9 @@ php artisan serve
 ctrl + c
 
 ```
+
 ## Configurazione Laravel
+
 ```bash
 composer require pacificdev/laravel_9_preset
 
@@ -48,17 +50,20 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin your_git_url 
+git remote add origin your_git_url
 git push -u origin main
 
 
 ```
-## Clono progetto da github 
+
+## Clono progetto da github
 
 ```bash
 # copio file .env.example e lo rinomino in .env
 
 composer install
+
+#env
 
 php artisan key:generate
 
@@ -69,7 +74,7 @@ npm install
 # creo il database da phpmyadmin
 
 
-# preparo le rotte file web.php es. 
+# preparo le rotte file web.php es.
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
 
 # creo controller
@@ -81,3 +86,20 @@ php artisan make:model Nome
 # creo le views relative
 
 ```
+
+Ogni treno dovrà avere:
+Azienda
+Stazione di partenza
+Stazione di arrivo
+Orario di partenza
+Orario di arrivo
+Codice Treno
+Numero Carrozze
+In orario
+Cancellato
+È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto :occhiolino:
+Create il Model Train e
+Aggiungete un seeder per la classe Train usando FakerPHP.
+Create relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
+Bonus:
+Create relativo Controller e rotta per mostrare tutti i treni che sono in partenza dalla data odierna.
